@@ -1,0 +1,10 @@
+.PostView {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-width: 70%;
+}
+
+.image {
+    max-width: 40%;
+}
