@@ -16,7 +16,7 @@ const PostList = ({data}) => {
       {
         posts && posts.length > 0 ?
           posts.map((post,index) =>
-            <Card id={post.id} title={post.title} content={post.content}
+            <Card id={post.id} title={post.title} content={post.content} date_created={post.created_at}
                   image_url={post.image_url} upvotes={post.upvotes} comments={post.comments}/>
           ) : <h2>{'No Posts Created'}</h2>
       }

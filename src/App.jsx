@@ -17,7 +17,7 @@ const App = () => {
       const {data} = await supabase
         .from('Posts')
         .select()
-        .order('created_at', { ascending: true })
+        .order('created_at', { ascending: false })
 
 
       // set state of posts

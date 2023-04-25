@@ -26,6 +26,7 @@ const Card = (props) => {
   return (
     <div className="Card">
       <Link to={'view/' + props.id}><h2 className="title">{props.title}</h2></Link>
+      <p className="date_created">{props.date_created}</p>
       <img className={"image"} src={props.image_url} alt={props.image_url} />
       <button className="upvote" onClick={addUpvotes} >{upvotes}👍</button>
     </div>
